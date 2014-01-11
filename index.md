@@ -1,5 +1,4 @@
 {% include inc/w_hd.html %}
-
 <link rel="shortcut icon" href="images/favicon.ico"/>
 <link href="jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
