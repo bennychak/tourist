@@ -1,0 +1,51 @@
+<div class="metro" id="_metro">
+
+<ul class="clear" style="display:block">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+<ul class="clear">
+<!-- metroItem m_metro_item.html -->
+<!--#include file="m_metro_item.html"-->
+<!-- /metroItem -->
+</ul>
+
+</div>

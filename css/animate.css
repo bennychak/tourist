@@ -1,0 +1,155 @@
+/* CSS GUIDE - 动画库
+================================================================
+ *
+ * PROJECT:	旅行家;
+ * AUTHOR:	bennyzhai;
+ *
+================================================================*/
+
+
+
+
+
+/* 淡入
+================================================================*/
+
+@-webkit-keyframes enter_0{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+@-moz-keyframes enter_0{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+@-o-keyframes enter_0{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+@-ms-keyframes enter_0{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+@keyframes enter_0{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+/* 放大淡入
+================================================================*/
+
+@-webkit-keyframes enter_zoomin{
+	0%{-webkit-transform:scale(.95); opacity:0;}
+	100%{-webkit-transform:scale(1); opacity:1;}
+}
+@-moz-keyframes enter_zoomin{
+	0%{-moz-transform:scale(.95); opacity:0;}
+	100%{-moz-transform:scale(1); opacity:1;}
+}
+@-o-keyframes enter_zoomin{
+	0%{-o-transform:scale(.95); opacity:0;}
+	100%{-o-transform:scale(1); opacity:1;}
+}
+@-ms-keyframes enter_zoomin{
+	0%{-ms-transform:scale(.95); opacity:0;}
+	100%{-ms-transform:scale(1); opacity:1;}
+}
+@keyframes enter_zoomin{
+	0%{transform:scale(.95); opacity:0;}
+	100%{transform:scale(1); opacity:1;}
+}
+
+/* 上方淡入10px
+================================================================*/
+
+@-webkit-keyframes enter_t_10{
+	0%{ -webkit-transform:translateY(-10px); opacity:0;}
+	100%{ -webkit-transform:translateY(0); opacity:1;}
+}
+@-moz-keyframes enter_t_10{
+	0%{ -moz-transform:translateY(-10px); opacity:0;}
+	100%{ -moz-transform:translateY(0); opacity:1;}
+}
+@-o-keyframes enter_t_10{
+	0%{ -o-transform:translateY(-10px); opacity:0;}
+	100%{ -o-transform:translateY(0); opacity:1;}
+}
+@-ms-keyframes enter_t_10{
+	0%{ -ms-transform:translateY(-10px); opacity:0;}
+	100%{ -ms-transform:translateY(0); opacity:1;}
+}
+@keyframes enter_t_10{
+	0%{ transform:translateY(-10px); opacity:0;}
+	100%{ transform:translateY(0); opacity:1;}
+}
+
+/* 右侧淡入10px
+================================================================*/
+
+@-webkit-keyframes enter_r_10{
+	0%{ -webkit-transform:translateX(10px); opacity:0;}
+	100%{ -webkit-transform:translateX(0); opacity:1;}
+}
+@-moz-keyframes enter_r_10{
+	0%{ -moz-transform:translateX(10px); opacity:0;}
+	100%{ -moz-transform:translateX(0); opacity:1;}
+}
+@-o-keyframes enter_r_10{
+	0%{ -o-transform:translateX(10px); opacity:0;}
+	100%{ -o-transform:translateX(0); opacity:1;}
+}
+@-ms-keyframes enter_r_10{
+	0%{ -ms-transform:translateX(10px); opacity:0;}
+	100%{ -ms-transform:translateX(0); opacity:1;}
+}
+@keyframes enter_r_10{
+	0%{ transform:translateX(10px); opacity:0;}
+	100%{ transform:translateX(0); opacity:1;}
+}
+
+/* 下方淡入10px
+================================================================*/
+
+@-webkit-keyframes enter_b_10{
+	0%{ -webkit-transform:translateY(10px); opacity:0;}
+	100%{ -webkit-transform:translateY(0); opacity:1;}
+}
+@-moz-keyframes enter_b_10{
+	0%{ -moz-transform:translateY(10px); opacity:0;}
+	100%{ -moz-transform:translateY(0); opacity:1;}
+}
+@-o-keyframes enter_b_10{
+	0%{ -o-transform:translateY(10px); opacity:0;}
+	100%{ -o-transform:translateY(0); opacity:1;}
+}
+@-ms-keyframes enter_b_10{
+	0%{ -ms-transform:translateY(10px); opacity:0;}
+	100%{ -ms-transform:translateY(0); opacity:1;}
+}
+@keyframes enter_b_10{
+	0%{ transform:translateY(10px); opacity:0;}
+	100%{ transform:translateY(0); opacity:1;}
+}
+
+/* 左侧淡入10px
+================================================================*/
+
+@-webkit-keyframes enter_l_10{
+	0%{ -webkit-transform:translateX(-10px); opacity:0;}
+	100%{ -webkit-transform:translateX(0); opacity:1;}
+}
+@-moz-keyframes enter_l_10{
+	0%{ -moz-transform:translateX(-10px); opacity:0;}
+	100%{ -moz-transform:translateX(0); opacity:1;}
+}
+@-o-keyframes enter_l_10{
+	0%{ -o-transform:translateX(-10px); opacity:0;}
+	100%{ -o-transform:translateX(0); opacity:1;}
+}
+@-ms-keyframes enter_l_10{
+	0%{ -ms-transform:translateX(-10px); opacity:0;}
+	100%{ -ms-transform:translateX(0); opacity:1;}
+}
+@keyframes enter_l_10{
+	0%{ transform:translateX(-10px); opacity:0;}
+	100%{ transform:translateX(0); opacity:1;}
+}

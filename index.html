@@ -1,49 +1,161 @@
-<!DOCTYPE html>
-<html>
+<!--#include file="inc/w_hd.html"-->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link href="jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Tourist「旅行家」 : " />
+<script src="http://mat1.gtimg.com/www/mb/mv/js/jquery.min.js" type="text/javascript"></script>
+<script src="jqvmap/jquery.vmap.js" type="text/javascript"></script>
+<script src="jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+<script src="jqvmap/maps/jquery.vmap.china.js" type="text/javascript"></script>
+<script src="jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<script type="text/javascript">
+$(function() {
+	$('#vmap_world').vectorMap({
+	    map: 'world_en',
+	    backgroundColor: '#f4f4f4',
+	    borderColor: '#f4f4f4',
+	    borderWidth: 1,
+	    color: '#b6d6ff',
+	    hoverOpacity: 0.7,
+	    selectedColor: '#b6d6ff',
+	    enableZoom: false,
+	    showTooltip: true,
+	    values: sample_data,
+	    scaleColors: ['#dae5ff', '#88aef9'],
+	    normalizeFunction: 'polynomial',
+	    onRegionClick: function(element, code, region)
+	    {
+	        var message = '目的地：'
+	            + region 
+	            + '('
+	            + code.toUpperCase()
+	            + ')';
+	             
+	        alert(message);
+	    }
+	});
+	$('#vmap_china').vectorMap({
+	    map: 'china_en',
+	    backgroundColor: '#f4f4f4',
+	    borderColor: '#f4f4f4',
+	    borderWidth: 3,
+	    color: '#b6d6ff',
+	    hoverOpacity: 0.7,
+	    selectedColor: '#b6d6ff',
+	    enableZoom: false,
+	    showTooltip: true,
+	    values: sample_data,
+	    scaleColors: ['#dae5ff', '#88aef9'],
+	    normalizeFunction: 'polynomial',
+	    onRegionClick: function(element, code, region)
+	    {
+	        var message = ''
+	            + region 
+	            /*+ '('
+	            + code.toUpperCase()
+	            + ')'*/;
+	             
+	        alertBox(message);
+	    }
+	});
 
-    <title>Tourist「旅行家」</title>
-  </head>
+});
 
-  <body>
+function switchmap(n){
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/bennychia/tourist">View on GitHub</a>
+	var map = new Object();
+		map.bd = $('.map .bd');
 
-          <h1 id="project_title">Tourist「旅行家」</h1>
-          <h2 id="project_tagline"></h2>
+	switch(n){
+		case 0 : {
+			map.deg = parseInt(map.bd.attr('rel')) + 180;
+			break;
+		}
+		case 1 : {
+			map.deg = parseInt(map.bd.attr('rel')) - 180;
+			break;
+		}
+	}
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/bennychia/tourist/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/bennychia/tourist/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+	map.bd.attr('rel',map.deg);
+	map.bd.css({
+		'-webkit-transform' : 'rotate(' + map.deg + 'deg)'
+	});
+}
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>第二届腾讯创意马拉松 2014.1.10 - 1.12 北京分赛区 西格玛大厦 参赛作品「旅行家」</p>
-      </section>
-    </div>
+function alertBox(msg){
+	//alert(msg);
+	window.open('fall_'+msg+'.shtml','_top');
+}
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Tourist「旅行家」 maintained by <a href="https://github.com/bennychia">bennychia</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+function tabswitch(o){
+	var area = new Object();
+		area_name = $(o).children('.txt').text();
+		area_item = $(o).parents('td').index();
 
-    
+	$('#_tagnav .item').removeClass('select');
+	$(o).parents('.item').addClass('select');
+	$('#_metro ul').hide();
+	$('#_metro ul:eq(' + parseInt(area_item) + ')').show();
+}
+</script>
+</head>
+<body>
 
-  </body>
+<!-- 顶部导航 m_topNav.html -->
+<!--#include file="inc/m_topNav.html"-->
+<!-- /顶部导航 -->
+
+<div class="mod pt15">
+<div class="av_ls">
+	<div class="ar arl"><a href="javascript:void(0)" onclick="switchmap(0)" hidefocus="true"><em></em></a></div>
+	<div class="ar arr"><a href="javascript:void(0)" onclick="switchmap(1)" hidefocus="true"><em></em></a></div>
+	<div class="av_con">
+		<div class="av_con_bd clear">
+
+		<!-- 地图 -->
+		<div class="map">
+			<div class="bd" rel="0">
+		    <div class="item">
+		    	<div id="vmap_china" class="m"></div>
+		    	<div class="tx_c tx_22 tx_yh pt15">中国的 <span class="c_tx4">旅行家</span> 在哪里？点击地图找到他们</div>
+		    </div>
+		    <div class="item" style="-webkit-transform:rotate(180deg)">
+		    	<div id="vmap_world" class="m"></div>
+		    	<div class="tx_c tx_22 tx_yh pt15">你，也可以 <span class="c_tx4">探索世界</span></div>
+		    </div>
+		    </div>
+		</div>
+		<!-- /地图 -->
+
+		</div>
+	</div>
+
+</div>
+</div>
+
+<div class="c_bg1 pb15">
+
+<div class="toptopic clear">
+	<h2><span class="tit">我们在这里</span></h2>
+	<div class="opt">
+		<a href="fall.shtml" class="c_tx6 vt_m dis_inb tx_14 tx_yh">发现更多风景 <span class="tx_ar">»</span></a>
+	</div>
+</div>
+
+<!-- 标签导航 m_tagNav.html -->
+<!--#include file="inc/m_tagNav.html"-->
+<!-- /标签导航 -->
+
+<!-- metro m_metro.html -->
+<!--#include file="inc/m_metro.shtml"-->
+<!-- /metro -->
+
+</div>
+
+<!-- 版权 m_copyright.html -->
+<!--#include file="inc/m_copyright.html"-->
+<!-- /版权 -->
+
+</body>
 </html>

@@ -1,0 +1,371 @@
+/* CSS GUIDE - 基础元素
+================================================================
+ *
+ * PROJECT:	旅行家;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS RESET
+ * 2. 公用全局公用CSS;
+ * 3. 公用基础样式;
+ * 4. 公用皮肤;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS RESET
+================================================================*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,header,footer,nav,article,section{margin:0;padding:0}
+fieldset,img,form{border:0; vertical-align:top}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+header,footer,nav,article,section,aside{display:block}
+ol,ul,li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+strong{font-weight:800}
+
+html{ overflow-y:scroll;}
+body{ font:12px/1.75 Helvetica,Arial,sans-serif;}
+
+table{ border-collapse:collapse;border-spacing:0}
+
+input,textarea,select,button{ border:none; font:12px/1.75 Helvetica,Arial,sans-serif; font-weight:inherit; outline:none}
+button{ white-space:nowrap; vertical-align:middle; cursor:pointer}
+textarea{ resize:none; overflow-y:auto;}
+
+sup{ vertical-align:text-top}
+sub{ vertical-align:text-bottom}
+
+a{ text-decoration:none; outline:none; cursor:pointer;}
+a:hover{ text-decoration:underline}
+
+video,
+embed{ vertical-align:top; max-width:100%}
+video{ background:#f0f0f0;}
+
+
+
+
+
+/* 2 公用全局公用CSS
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+.clear{zoom:1}
+.left{float:left}
+.right{float:right}
+
+/* DISPLAY */
+.dis_b{ display:block}
+.dis_in{ display:inline}
+.dis_inb{ display:inline-block; *display:inline; *zoom:1}
+.vis_on{ visibility: visible;}
+.vis_off{ visibility: hidden;}
+
+/* 边距 */
+.mt5{ margin-top:5px}
+.mr5{ margin-right:5px}
+.mb5{ margin-bottom:5px}
+.ml5{ margin-left:5px}
+.mt10{ margin-top:10px}
+.mr10{ margin-right:10px}
+.mb10{ margin-bottom:10px}
+.ml10{ margin-left:10px}
+.mt15{ margin-top:15px}
+.mr15{ margin-right:15px}
+.mb15{ margin-bottom:15px}
+.ml15{ margin-left:15px}
+.pt5{ padding-top:5px}
+.pr5{ padding-right:5px}
+.pb5{ padding-bottom:5px}
+.pl5{ padding-left:5px}
+.pt10{ padding-top:10px}
+.pr10{ padding-right:10px}
+.pb10{ padding-bottom:10px}
+.pl10{ padding-left:10px}
+.pt15{ padding-top:15px}
+.pr15{ padding-right:15px}
+.pb15{ padding-bottom:15px}
+.pl15{ padding-left:15px}
+
+/* 对齐 */
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+.vt_b{ vertical-align:bottom}
+
+/* 文字
+----------------------------------------------------------------*/
+
+/* 字体 */
+.tx_song{font-family:SimSun,Helvetica}
+.tx_yh{font-family:Microsoft YaHei,Mingliu,Helvetica,sans-serif}
+.tx_ar{ font-family:Arial}
+.tx_ss{ font-family:sans-serif}
+
+/* 字号 */
+.tx_-2{ font-size:.75em}
+.tx_-1{ font-size:.875em}
+.tx_0{ font-size:1em}
+.tx_1{ font-size:1.125em}
+.tx_2{ font-size:1.25em}
+
+.tx_12{ font-size:12px;}
+.tx_14{ font-size:14px;}
+.tx_16{ font-size:16px;}
+.tx_18{ font-size:18px;}
+.tx_20{ font-size:20px;}
+.tx_22{ font-size:22px;}
+.tx_24{ font-size:24px;}
+.tx_26{ font-size:26px;}
+
+/* 字重 */
+.tx_b{ font-weight: 800}
+.tx_n{ font-weight:normal}
+
+/* 字体样式 */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* 对齐 */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+
+/* 折行 */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_unbr,
+.tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+/* 基础边框
+----------------------------------------------------------------*/
+
+body .bor0{ border:none}
+.bor1{ border-width:1px; border-style:solid}
+
+/* 小箭头 author: jelly
+----------------------------------------------------------------*/
+
+.a,.a u{display:inline-block;width:0px;height:0px;line-height:0;font-size:0}
+.a_t,.a_t u{border-top-style:solid;border-bottom:dashed transparent;border-right:dashed transparent;border-left:dashed transparent}
+.a_r,.a_r u{border-right-style:solid;border-top:dashed transparent;border-bottom:dashed transparent;border-left:dashed transparent}
+.a_b,.a_b u{border-bottom-style:solid;border-top:dashed transparent;border-right:dashed transparent;border-left:dashed transparent}
+.a_l,.a_l u{border-left-style:solid;border-top:dashed transparent;border-bottom:dashed transparent;border-right:dashed transparent}
+.a3{border-width:3px 4px 3px 3px;border-width:3px 3px 3px 2px\9}
+.a3_b{border-width:3px 3px 4px 3px\9;}
+.a4{border-width:4px 5px 4px 4px;border-width:4px 4px 4px 3px\9}
+.a4_b{border-width:4px 5px 4px 4px;border-width:5px 5px 5px 4px\9}
+.a5{border-width:5px 6px 5px 5px;border-width:5px 5px 5px 4px\9}
+.a5_b{border-width:5px 6px 5px 5px;border-width:6px 6px 6px 5px\9}
+.a u{_position:absolute;color:#fff}
+.a_t u{border-width:3px 3px 3px 2px\9;margin:-5px 0 0 -3px;margin:-5px 0 0 -2px\9}
+.a_r u{border-width:4px;margin:-4px 0 0 -2px;*margin:-4px 0 0 -2px}
+.a_b u{border-width:3px 3px 4px 3px\9;margin:-1px 0 0 -3px}
+.a_l u{border-width:3px;margin:-3px 0 0 -5px;margin:-3px 0 0 -4px\9}
+
+/* 分隔线
+----------------------------------------------------------------*/
+
+.hr1{ height:0; font-size:0; border:0; border-bottom:#d1d1d1 1px dotted;}
+
+/* 其他
+----------------------------------------------------------------*/
+
+.cur_auto{ cursor: auto!important;}
+.cur_default{ cursor: default!important;}
+.cur_pointer{ cursor:pointer!important;}
+
+/* 图片和图标
+----------------------------------------------------------------*/
+
+.ico16,
+.ico25,
+.ico36,
+.ico50{ display:inline-block; *display:inline; *zoom:1; background-repeat:no-repeat; font-size:0; vertical-align:middle; overflow:hidden}
+
+.ico16{ width:16px; height:16px}
+.ico25{ width:25px; height:25px}
+.ico36{ width:36px; height:36px}
+.ico50{ width:50px; height:50px}
+
+/* loading */
+.loading{ background:url(http://mat1.gtimg.com/www/mb/images/loading.gif) 50% 50% no-repeat}
+
+
+
+
+
+/* 3 公用基础样式
+================================================================*/
+
+/* 按钮
+----------------------------------------------------------------*/
+
+.btn{ display:inline-block; *display:inline; *zoom:1; text-align:center; border-radius:3px; vertical-align:middle; white-space:nowrap; cursor:pointer; outline:none}
+.btn:hover{ text-decoration:none; opacity:.85}
+.btn input,
+.btn button{ border:none; background:none; cursor:pointer; outline:none}
+.btn .t{ vertical-align:middle; *zoom:1;}
+
+.btn1,
+.btn2,
+.btn3{ line-height:15px; overflow:hidden; min-width:46px; _width:46px; _overflow-x:visible; padding:3px 8px 4px;}
+.btn1 .t,
+.btn2 .t,
+.btn3 .t{ line-height:15px; font-size:12px;}
+
+.btn1_l,
+.btn2_l,
+.btn3_l{ line-height:35px; overflow:hidden; min-width:60px; _width:60px; _overflow-x:visible; padding:6px 20px 9px; _padding-bottom:5px;}
+.btn1_l .t,
+.btn2_l .t,
+.btn3_l .t{ line-height:35px; font-size:20px; font-family:Microsoft Yahei,Mingliu,sans-serif}
+
+.btn1_xl,
+.btn2_xl,
+.btn3_xl{ line-height:42px; overflow:hidden; min-width:140px; _width:140px; _overflow-x:visible; padding:6px 20px 9px; _padding-bottom:5px; border-radius:5px}
+.btn1_xl .t,
+.btn2_xl .t,
+.btn3_xl .t{ line-height:42px; font-size:24px; font-family:Microsoft Yahei,Mingliu,sans-serif;}
+
+.btn1,
+.btn1_l,
+.btn1_xl{
+	border:#cecdcd 1px solid;
+	background-color:#f0f0f0;
+}
+.btn1 .t,
+.btn1_l .t,
+.btn1_xl .t{ color:#333}
+.btn1:hover .t,
+.btn1_l:hover .t,
+.btn1_xl:hover .t{ color:#333}
+.btn1:active,
+.btn1_l:active,
+.btn1_xl:active{
+	border-color:#c3c3c3;
+	background-color:#e4e4e4;
+}
+
+.btn2,
+.btn2_l,
+.btn2_xl{
+	border:#03acb9 1px solid;
+	background-color:#0cc0ce;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#10c5d3), to(#08bbc9)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #10c5d3, #08bbc9); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #10c5d3, #08bbc9); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #10c5d3, #08bbc9); /* IE10 */
+	background-image: -o-linear-gradient(top, #10c5d3, #08bbc9); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #10c5d3, #08bbc9); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr='#10c5d3',endColorstr='#08bbc9');
+}
+.btn2 .t,
+.btn2_l .t,
+.btn2_xl .t{ color:#fff}
+.btn2:hover .t,
+.btn2_l:hover .t,
+.btn2_xl:hover .t{ color:#fff}
+.btn2:active,
+.btn2_l:active,
+.btn2_xl:active{
+	border-color:#03a3b0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0fbbc8), to(#08b1bf)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #0fbbc8, #08b1bf); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #0fbbc8, #08b1bf); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #0fbbc8, #08b1bf); /* IE10 */
+	background-image: -o-linear-gradient(top, #0fbbc8, #08b1bf); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #0fbbc8, #08b1bf); /* W3C */
+}
+
+.btn3,
+.btn3_l,
+.btn3_xl{
+	border:#04adba 1px solid;
+	background-color:#0abecc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0fcbd9), to(#04b0be)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #0fcbd9, #04b0be); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #0fcbd9, #04b0be); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #0fcbd9, #04b0be); /* IE10 */
+	background-image: -o-linear-gradient(top, #0fcbd9, #04b0be); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #0fcbd9, #04b0be); /* W3C */
+	box-shadow:#28dcea 0 1px 0 inset, rgba(0,0,0,.2) 0 1px 3px;
+	text-shadow:#05a2ae 0 2px 2px;
+	filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr='#0fcbd9',endColorstr='#04b0be');
+}
+.btn3 .t,
+.btn3_l .t,
+.btn3_xl .t{ color:#fff}
+.btn3:hover .t,
+.btn3_l:hover .t,
+.btn3_xl:hover .t{ color:#fff}
+.btn3:active,
+.btn3_l:active,
+.btn3_xl:active{
+	border-color:#04a4b1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0ec1ce), to(#04a7b4)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #0ec1ce, #04a7b4); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #0ec1ce, #04a7b4); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #0ec1ce, #04a7b4); /* IE10 */
+	background-image: -o-linear-gradient(top, #0ec1ce, #04a7b4); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #0ec1ce, #04a7b4); /* W3C */
+	box-shadow:#26d1de 0 1px 0 inset, rgba(0,0,0,.2) 0 1px 3px;
+}
+
+.e_btn_disabled{ opacity:.7; cursor:default; filter:alpha(opacity=70)}
+.e_btn_disabled:hover{ opacity:.7; filter:alpha(opacity=70)}
+.btn1.e_btn_disabled:active,
+.btn1_l.e_btn_disabled:active,
+.btn1_xl.e_btn_disabled:active{ background-color:#f0f0f0;}
+.e_btn_disabled input,
+.e_btn_disabled button{ cursor:default;}
+
+
+
+
+
+
+/* 4 公用皮肤
+================================================================*/
+
+/* color
+----------------------------------------------------------------*/
+
+.c_tx0,body{ color:#333}/* 默认文字色 */
+.c_tx1,a{ color:#366}/* 默认链接色 */a:hover{ color:#366}/* 鼠标经过 */a:active{ color:#366}/* 鼠标点击 */
+.c_tx2{ color:#97999c;}/* 弱文字色1 */
+.c_tx3{ color:#97999c}/* 弱链接色 */.c_tx3:hover{ color:#97999c}/* 鼠标经过 */.c_tx3:active{ color:#97999c}/* 鼠标点击 */
+.c_tx4,.c_keyword{ color:#fc5105}/* 强调色1 */
+.c_tx5{ color:#cd1901}/* 强调色2 */
+.c_tx6{ color:#666;}/* 弱文字色2 */
+.c_tx7{ color:#fff;}/* 白色 */
+
+/* border
+----------------------------------------------------------------*/
+
+.c_bor1{ border-color:#ccc}/* 两栏结构左栏模块边框色 */
+.c_bor2{ border-color:#ddd}/* 两栏结构右栏模块边框色 */
+.c_bor3{ border-color:#d9d9d9}/* 通栏结构边框色，比如微视搜索顶部 */
+
+/* background
+----------------------------------------------------------------*/
+
+/* 背景色 */
+.c_bg0,body{ background-color:#f4f4f4}/* 默认页面背景色 */
+.c_bg1{ background-color:#fff;}/* 白色 */
+.c_bg2{ background-color:#ebebeb}/* 一些通栏模块的背景色，比如微视搜索顶部 */
+
+/* 底纹 */
+.img_bg1{ background:#d2d2d2 url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg);}
+.img_bg2{ background:#f1f1f1 url(http://mat1.gtimg.com/www/mb/images/weishi/bgpattern2.jpg);}
