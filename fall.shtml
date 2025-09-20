@@ -1,4 +1,10 @@
-<!--#include file="inc/w_hd.html"-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" media="screen" href="css/style.css" />
+
+<title>旅行家</title>
 <link rel="shortcut icon" href="images/favicon.ico"/>
 <link href="jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -32,14 +38,91 @@ function cateswitch(){
 <body>
 
 <!-- 顶部导航 m_topNav.html -->
-<!--#include file="inc/m_topNav.html"-->
+<div class="topnav">
+	<div class="bd clear">
+
+		<!-- logo -->
+		<div class="logo clear">
+			<div class="c1">
+				<a href="index.html" title="旅行家"></a>
+			</div>
+		</div>
+		<!-- /logo -->
+
+		<div class="right clear">
+
+		<!-- 一级导航 -->
+		<div class="nav left ml15 clear" style="display:none">
+
+			<div class="item">
+				<a href="fall.html" class="txt">发现中国</a>
+			</div><div class="item">
+				<a href="fall.html" class="txt">探索世界</a>
+			</div>
+
+		</div>
+		<!-- /一级导航 -->
+
+		</div>
+
+	</div>
+</div>
+<div class="topnav_ph">
+	<!-- placeholder -->
+</div>
 <!-- /顶部导航 -->
 
 <div class="toppanel" id="toppanel1">
 <div class="inner">
 
 <!-- 标签导航 m_cateNav.html -->
-<!--#include file="inc/m_cateNav.html"-->
+<div class="catenav clear expand" id="_catenav">
+	<div class="bd">
+	<div class="toptopic clear bor0">
+		<h2><span class="tit">#我们在<span class="c_tx4">陕西</span>#</span></h2>
+		<div class="desc"><span class="c_tx2">共18个景点</div>
+		<div class="opt"><a href="###">[查看腾讯微博话题]</a></span></div>
+	</div>
+	<div class="mt15"></div>
+	<div class="mod">
+	<span class="item select"><a href="javascript:void(0)" onclick="cateswitch(this)" hidefocus="true"><span class="txt">秦始皇兵马俑</span></a></span>
+	<span class="item"><a href="javascript:void(0)" onclick="cateswitch(this)" hidefocus="true"><span class="txt">乾陵</span></a></span>
+	<span class="item"><a href="javascript:void(0)" onclick="cateswitch(this)" hidefocus="true"><span class="txt">茂陵</span></a></span>
+	<span class="item"><a href="javascript:void(0)" onclick="cateswitch(this)" hidefocus="true"><span class="txt">阳陵</span></a></span>
+	<span class="item"><a href="javascript:void(0)" onclick="cateswitch(this)" hidefocus="true"><span class="txt">黄帝陵</span></a></span>
+	<span class="item"><a href="javascript:void(0)" onclick="cateswitch(this)" hidefocus="true"><span class="txt">黄河壶口瀑布</span></a></span>
+	</div>
+	</div>
+	<div class="ft">
+	<div class="con">
+	<hr class="hr1" />
+	<div class="mod">
+	<div class="detailnav" id="_detailnav">
+	<ul class="clear">
+		<li class="detail cur">
+			<span class="t"><a href="###">全部</a></span>
+		</li>
+		<li class="detail">
+			<span class="t"><a href="###">二级景点</a></span>
+		</li>
+		<li class="detail">
+			<span class="t"><a href="###">二级景点</a></span>
+		</li>
+		<li class="detail">
+			<span class="t"><a href="###">二级景点</a></span>
+		</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	<div>
+	<a href="javascript:void(0)" onclick="cateswitch()" class="close_btn">
+		<b class="a a5 a_t"></b>
+		<b class="a a5 a_b"></b>
+	</a>
+	</div>
+	</div>
+</div>
 <!-- /标签导航 -->
 
 </div>
@@ -51,30 +134,222 @@ function cateswitch(){
 <div class="ws_ls clear">
 <div class="col">
 <ul class="clear">
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
 </ul>
 </div>
 <div class="col">
 <ul class="clear">
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
 </ul>
 </div>
 <div class="col">
 <ul class="clear">
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
 </ul>
 </div>
 <div class="col last">
 <ul class="clear">
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
-<!--#include file="inc/m_mvfall_item.html"-->
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+		<img src="http://t2.qpic.cn/mblogpic/79a2430d911cc3bd06e4/220" />
+	</div>
+	<div class="comtBox">
+		
+		<div class="userPic">
+			<a href="###" hidefocus="true"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/50" alt="" /></a>
+		</div>
+		<div class="userName"><a href="###" class="c_tx7">不正常人类研究中心</a></div>
+		<div class="msgBox">
+			<div class="msgCnt c_tx7 tx_14">未来不需要改变，那是执着于信念的人们必然迎接到来的明天。
+			</div>
+		</div>
+		<div class="time"><a href="###" class="c_tx2">12月12日 16:32</a></div>
+	</div>
+</li>
 </ul>
 </div>
 </div>
@@ -83,7 +358,14 @@ function cateswitch(){
 </div>
 
 <!-- 版权 m_copyright.html -->
-<!--#include file="inc/m_copyright.html"-->
+<div class="copyright">
+	<div class="bd">
+		<p><img src="images/lv_txt.png" alt="" /></p>
+		<p>第二届腾讯创意马拉松 2014.1.10 - 1.12 北京分赛区 西格玛大厦 参赛作品「旅行家」</p>
+		<p>Copyright &copy; 1998 - 2014 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" target="_blank">All Rights Reserved</a></p>
+		<p><a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">腾讯公司</a> 版权所有</p>
+	</div>
+</div>
 <!-- /版权 -->
 
 </body>
