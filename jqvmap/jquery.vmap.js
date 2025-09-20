@@ -437,7 +437,7 @@
         if (params.showTooltip) {
           map.label.html(
             '<div class="mapTip"><p>探索：'+
-            mapData.pathes[code].name + '</p><p><img src="http://t2.qpic.cn/mblogpic/94c56472ae4a6282578c/220" /></p></div>'
+            mapData.pathes[code].name + '</p><p><img src="https://picsum.photos/220/220?random=999" /></p></div>'
             );
           jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
 
