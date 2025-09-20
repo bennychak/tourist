@@ -24,7 +24,7 @@
 .av_ls .ar em,
 .vip,
 .av_ls .page .dot,
-.ws_ls .videoBox .playbtn{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_mod_131031.png)}
+.ws_ls .videoBox .playbtn{ background-image:url(../images//sprite_mVideo_mod_131031.png)}
 .vip{ display:inline-block; *display:inline; *zoom:1; width:20px; height:20px; margin-left:2px; background-position:-129px 0; vertical-align:middle;}
 .av_ls .arl em{ background-position:-129px -22px}
 .av_ls .arl a:hover em{ background-position:-129px -92px}
@@ -40,7 +40,7 @@
 .ws_ls .videoBox a:hover .playbtn{ background-position:-41px -129px}
 
 /* 关闭按钮 */
-.close{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_lay_130906b.png);}
+.close{ background:url(../images/sprite_mVideo_lay_130906b.png);}
 .close{ position:absolute; right:3px; display:block; width:31px; height:31px; background-position: -57px 0;}
 .close:hover{ background-color:#ebebeb; border-radius:3px}
 
@@ -83,10 +83,10 @@
 
 .topnav .logo .c1,
 .searchbar .searchBtn,
-.tagnav .dot{ background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/sprite_global_140106.png); background-repeat:no-repeat;}
-.topnav .logo .c2{ background-image:url(http://mat1.gtimg.com/www/mb/mobile/mv/logo_weishi.8a.png); background-repeat:no-repeat;
+.tagnav .dot{ background-image:url(../images/sprite_global_140106.png); background-repeat:no-repeat;}
+.topnav .logo .c2{ background-image:url(../images/logo_weishi.8a.png); background-repeat:no-repeat;
 	_background:none;
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/mobile/mv/logo_weishi.32.png')
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='../images/logo_weishi.32.png')
 }
 
 .topnav{ position:fixed; z-index:990; height:42px; width:100%; top:0;
